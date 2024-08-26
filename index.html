@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Grandma's recipe</title>
+  </head>
+  <body>
+    <header>
+      <div class="recipe_title"><h1>Grandma's recipes</h1></div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <h2>Grandma Eva's cookbook</h2>
+        <p>Welcome to Grandma Eva's Cookbook, a cherished collection of heartwarming recipes that have been lovingly passed down through generations. Dive into a world of time-honored dishes that bring together family and friends around the table. From delectable Czech classics to comforting home-cooked meals, each recipe is a tribute to Grandma Eva's culinary passion and her knack for creating unforgettable flavors. Discover the secrets of her kitchen and bring a touch of her magic to your own home.</p>
+      </section>
+
+      <section id="recipes">
+        <h2>Recipes</h2>
+        <button id="add-recipe-btn">Add Recipe</button>
+
+        <div id="add-recipe-container" style="display:none;">
+          <h2>Add a New Recipe</h2>
+          <form id="add-recipe-form">
+            <label for="recipe-title">Recipe Title:</label>
+            <input type="text" id="recipe-title" required /><br />
+
+            <label for="recipe-ingredients"
+              >Ingredients (comma-separated):</label>
+            <input type="text" id="recipe-ingredients"
+            placeholder="e.g., sugar, flour" required /><br />
+
+            <label for="recipe-instructions">Instructions:</label>
+            <textarea id="recipe-instructions" placeholder="Enter instructions here" required></textarea><br />
+
+            <label for="recipe-image">Recipe Image URL:</label>
+            <input type="text" id="recipe-image" placeholder="Enter image URL"><br>
+
+            <button type="submit">Add Recipe</button>
+          </form>
+        </div>
+
+        <div id="recipe-list"></div>
+      </section>
+
+      <section id="about">
+        <h2>About my grandma</h2>
+        <div class="about_more">
+          <img src="/images/babi.JPG" alt="Grandma" />
+          <p>
+            My grandma has been cooking and baking her entire life, thus
+            creating some of my favorite dishes I've ever had. Not only does she
+            make the best pancakes but she's also a beast when it comes to any
+            Czech dishes. No food tastes as good as food cooked with love.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Grandma's Recipes. All Rights Reserved. B)</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
